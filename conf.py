@@ -41,13 +41,4 @@ html_theme_options = {
     "top_of_page_button": "edit",
 }
 
-# -- Custom meta tags for SEO ------------------------------------------------
 
-def setup(app):
-    app.add_config_value('html_context', {}, 'env')
-    app.add_css_file('custom.css')
-    app.add_meta_tags = lambda: [
-        '<meta name="description" content="Login to your United Healthcare provider portal. Access secure tools, update provider data, view patient information, and manage claims.">',
-        '<meta name="keywords" content="United Healthcare Provider Login, UHC Login, UnitedHealthcare Portal, Provider Account Access">',
-        '<meta name="author" content="UnitedHealthcare">'
-    ]
