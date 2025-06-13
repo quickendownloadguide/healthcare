@@ -36,6 +36,11 @@ html_theme_options = {
     "dark_logo": "logo.png",
     "sidebar_hide_name": True,
     "navigation_with_keys": True,
+    "footer_icons": [],  # Hide icons
+    "source_repository": None,  # Hide repo link
+    "source_branch": None,
+    "source_directory": None,
+    'show_powered_by': False,
 }
 
 html_css_files = ['custom.css']
