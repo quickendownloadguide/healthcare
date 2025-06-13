@@ -88,3 +88,7 @@ img.logo,
 .sidebar-logo-container {
     display: none !important;
 }
+
+.footer {
+    display: none !important;
+}
