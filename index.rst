@@ -10,7 +10,7 @@ This platform is designed to streamline your workflows by offering tools to chec
 
     <div style="text-align: center; margin: 30px 0;">
 
-.. image:: Button.png
+.. image:: Getbutton.png
    :alt: United Healthcare Provider Login
    :target: #
 
