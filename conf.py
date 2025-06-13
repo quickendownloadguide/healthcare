@@ -20,26 +20,22 @@ extensions = [
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+html_static_path = ['_static']
 
 # -- HTML output -------------------------------------------------------------
 
 html_theme = 'furo'
 html_logo = 'logo.png'
 html_favicon = 'favicon.ico'
-html_static_path = ['_static']
 html_title = "United Healthcare Provider Login – Secure Access Portal"
 html_short_title = "UHC Provider Login"
 html_show_sourcelink = False
 
-# -- Furo Theme Options ------------------------------------------------------
-
 html_theme_options = {
     "light_logo": "logo.png",
     "dark_logo": "logo.png",
-    "sidebar_hide_name": True,  # hide project name under sidebar logo
+    "sidebar_hide_name": True,
     "navigation_with_keys": True,
 }
-
-# -- Custom Styling ----------------------------------------------------------
 
 html_css_files = ['custom.css']
