@@ -8,66 +8,22 @@ a {
     color: #00695c;
 }
 
-/* --- CUSTOM TOP NAVBAR FOR SPHINX-BOOK-THEME --- */
-#custom-navbar {
-    background-color: #004080;
-    color: white;
-    padding: 12px 20px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Adjust logo size if needed */
+img.logo,
+img.logo__image,
+.sidebar-logo-container img {
+    max-height: 50px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
 }
 
-.nav-logo {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 6px 10px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffdd57;
-}
-
-/* CTA button style */
-.nav-button {
-    background-color: #ffffff;
-    color: #004080 !important;
-    padding: 6px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none !important;
-    transition: background 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #e6e6e6;
-    color: #003060 !important;
-}
-
-/* Hide "Made with..." footer in sphinx-book-theme */
+/* Hide default footer if desired */
 .bd-footer {
+    display: none !important;
+}
+
+/* Optional: remove sidebar logo if using header logo only */
+.sidebar-logo-container {
     display: none !important;
 }
