@@ -1,7 +1,75 @@
-/* custom.css */
+/* Use clean, readable font */
 body {
     font-family: 'Segoe UI', sans-serif;
 }
+
+/* Brand link color */
 a {
     color: #00695c;
+}
+
+/* --- NAVBAR STYLING --- */
+#custom-navbar {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+.nav-button {
+    background: #ffffff;
+    color: #004080 !important;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background: #e6e6e6;
+    text-decoration: none;
+}
+
+/* --- LOGO SIZING --- */
+img.logo,
+.sidebar-logo-container img {
+    max-height: 40px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Hide logo in sidebar if you only want it on top */
+.sidebar-logo-container {
+    display: none !important;
 }
