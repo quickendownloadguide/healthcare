@@ -12,11 +12,12 @@ a {
 #custom-navbar {
     background-color: #004080;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
 }
 
 .nav-container {
@@ -25,40 +26,54 @@ a {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: white;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 8px;
 }
 
 .nav-links a {
-    margin-left: 20px;
     color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    padding: 4px 8px;
 }
 
 .nav-links a:hover {
     color: #ffdd57;
 }
 
+/* Button-style link */
 .nav-button {
     background: #ffffff;
     color: #004080 !important;
-    padding: 6px 14px;
+    padding: 6px 16px;
     border-radius: 5px;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 10px;
     transition: background 0.3s;
+    text-align: center;
+    text-decoration: none !important;
+    white-space: nowrap;
 }
 
 .nav-button:hover {
     background: #e6e6e6;
-    text-decoration: none;
+    color: #002f66 !important;
 }
 
 /* --- LOGO SIZING --- */
@@ -69,7 +84,7 @@ img.logo,
     height: auto !important;
 }
 
-/* Hide logo in sidebar if you only want it on top */
+/* Hide logo in sidebar if you only want top logo */
 .sidebar-logo-container {
     display: none !important;
 }
