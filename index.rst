@@ -16,7 +16,7 @@ This platform is designed to streamline your workflows by offering tools to chec
 
 
 .. raw:: html
-
+</div>
 
 How to Access UnitedHealthcare Provider Login
 ------------------------------------------------
